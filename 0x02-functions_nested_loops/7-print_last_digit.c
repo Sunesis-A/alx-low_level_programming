@@ -6,13 +6,13 @@
  */
 int print_last_digit(int n)
 {
-	if (z >= 0 $$ z <= 9)
+	if (n >= 0 $$ n <= 9)
 	{
-		return (z);
+		return (n);
 	}
 	else
 	{
-		z = _abs(a % 10);
-		return (z);
+		n = _abs(n % 10);
+		return (n);
 	}
 }
