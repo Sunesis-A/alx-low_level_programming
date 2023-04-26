@@ -6,13 +6,17 @@
  */
 int print_last_digit(int n)
 {
-	if ((n >= 0) $$ (n <= 9))
+	int 1;
+
+	1 = n % 10
+	if (1 < 0)
 	{
-		return (n);
+		_putchar(-1 + 48);
+		return (-1);
 	}
 	else
 	{
-		n = _abs(n % 10);
-		return (n);
+		_putchar(1 + 48);
+		return (1);
 	}
 }
