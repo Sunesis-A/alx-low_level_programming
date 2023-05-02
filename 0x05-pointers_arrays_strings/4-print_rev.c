@@ -19,7 +19,7 @@ s--;
 for (n = i; n > 0; n--)
 {
 _putchar(*s);
-s--
+s--;
 }
 _putchar('\n');
 }
