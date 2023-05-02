@@ -7,11 +7,11 @@
  */
 int _atoi(char *s)
 {
-	unsigned int c = 0, s = 0, i = 0, n = 1, b = 1, a;
+	unsigned int c = 0, e = 0, i = 0, n = 1, b = 1, a;
 
 	while (*(s + c) != '\0')
 	{
-		if (s > 0 && (*(s + c) < '0' || *(s + c) > '9'))
+		if (e > 0 && (*(s + c) < '0' || *(s + c) > '9'))
 			break;
 
 		if (*(s + c) == '-')
@@ -19,14 +19,14 @@ int _atoi(char *s)
 
 		if ((*(s + c) >= '0') && (*(s + c) <= '9'))
 		{
-			if (s > 0)
+			if (e > 0)
 				b *= 10;
-			s++;
+			e++;
 		}
 		c++;
 	}
 
-	for (a = c - s; a < c; a++)
+	for (a = c - e; a < c; a++)
 	{
 		i = i + ((*(s + a) - 48) * b);
 		b /= 10;
