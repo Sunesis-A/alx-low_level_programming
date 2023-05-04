@@ -8,7 +8,6 @@
  * @size_r: buffer size
  * Return: dest.
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int a1 = 0, a2 = 0, o, b, d1, d2, dd = 0;
